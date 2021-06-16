@@ -55,7 +55,8 @@ extension Redis {
     public func zadd(_ key: String, tuples: (Int, RedisString)..., callback: (Int?, NSError?) -> Void) {
         zaddArrayOfScoreMembers(key, tuples: tuples, callback: callback)
     }
-
+    
+    /////
     /// Add elements to a sorted set.
     ///
     /// - Parameter key: The key.
